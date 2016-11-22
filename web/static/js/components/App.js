@@ -93,10 +93,10 @@ class App extends React.Component {
                 <div className="col m9 s12">
                     <div className="flow-text">
                         <a
-                            href="https://twitter.com/RGRjs"
+                            href="https://twitter.com/DropsEvents"
                             target="_blank"
                         >
-                          @RGRjs
+                          @DropsEvents
                         </a>
                     </div>
                 </div>
