@@ -19,18 +19,26 @@ This will be the core of the user experience in Drops. Users create, edit, and i
 
 ## Getting Started
 
-- [ ] Create barebones web-app
+- [x] Create barebones web-app
+  - Using Phoenix-hipster-stack
 - [ ] Create editable fields for the Drop ( 5 W’s)
+  - 11/27: Modify schema to allow creation of Event names, locations, times, descriptions
+  - Display schema information in updated cards
+  - Create map of local Drop locations with pins displaying info
+  - Sort events by closest upcoming times within x mile radius
+  - 
 
 **Who?**
 
 - [ ] Enable Drop invitations
+  - Hotlink individual drops in server with sharable links/ buttons
 - [ ] Allow admins to set visibility on Drop
-- [ ] Degree of separation set by the creator limits the size of the Drop
+  - Private to link only
 
 **What?**
 
 - [ ] Allow Admins to set an activity for the drop
+  - Name and description fields
 - [ ] Populate field with searchable suggestions for Drop activities
 - [ ] Enable straw poll suggestions from users
 - [ ] Enable straw poll voting
@@ -41,6 +49,7 @@ This will be the core of the user experience in Drops. Users create, edit, and i
 - [ ] Allow Admins to adjust duration
 - [ ] Allow admins to finalize time
 - [ ] Notify users that responded to the when-is-good when time is finalized
+  - Sign up for Drop updates via email
 
 **Where?**
 
@@ -60,6 +69,7 @@ Outside of the Drop screen, there needs to be a place to manage Drops and see wh
 - [ ] Allow users to view invites
 - [ ] Allow users to view upcoming and past Drops
 - [ ] Allow users to see local public Drops
+  - Display on map with pins
 - [ ] Allow users to see what Drops their friends are going to
 
 ## Bonus Drop Features
@@ -94,14 +104,6 @@ Outside of the Drop screen, there needs to be a place to manage Drops and see wh
 * [Jest](https://facebook.github.io/jest/)
 * [Docker](https://www.docker.com/)
 
-### Example app
-Phoenix hipster stack comes with an example app.
-
-The app is a port of the node.js app built in the [Building Data-driven React Applications with Relay, GraphQL, and Flux](http://app.pluralsight.com/courses/react-apps-with-relay-graphql-flux) course from Pluralsight.
-The app is running on a 512mb single core droplet on digitalocean.
-
-*More instressed in Elm ?* Check out [elm-hipster-stack](https://github.com/carleryd/elm-hipster-stack)
-
 ### Getting Started
 
 Clone this repo then:
@@ -133,17 +135,9 @@ Clone this repo then:
 3. `visit localhost:4001/reset`
 4. `visit localhost:4001`
 
-## Make your own project
-1. `git clone git@github.com:graphql-elixir/phoenix-hipster-stack.git <name-of-your-project>`
-2. `cd <name-of-your-project> rm -rf .git`
-3. `git init`
-4. `git remote add orgin <your-new-repo>`
-5. `git push -u orgin master`
-
 When changeing the graphql schemas run 
 `mix CreateSchema` to make a new `schema.json`. 
 This `schema.json` is used by Relay.
-
 
 ## Running in production.
 ```
@@ -152,8 +146,8 @@ MyAwesomePrompt> MIX_ENV=prod mix phoenix.digest
 MyAwesomePrompt> MIX_ENV=prod PORT=4000 mix phoenix.server
 ```
 
-
 ###Used resourses
+* [phoenix-hipster-stack](https://github.com/graphql-elixir/phoenix-hipster-stack)
 * [updated-phoenix-webpack-react-setup](http://mikker.github.io/2016/02/04/updated-phoenix-webpack-react-setup.html)
 * GraphQL & RethinkDB
   * [GraphQL-Elixir](https://github.com/joshprice/graphql-elixir)
