@@ -5,6 +5,10 @@
   
   Help from Chris Dower @Cdower
 
+# Drops-Phoenix
+
+Customized with drop info and added new fields to view. Started work on modifying schema for use with Drop data.
+
 # Description
 ----------
 
